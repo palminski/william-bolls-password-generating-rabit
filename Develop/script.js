@@ -26,6 +26,7 @@ function generatePassword() {
   if (passwordParameters.lowercase) {
     console.log("Special characters");
   }
+
 }
 
 function determinePasswordLength() {
@@ -42,7 +43,7 @@ function determinePasswordLength() {
 }
 function determineCharacterTypes() {
   let confirm = false;
-  while (!confirm) {
+  while (!confirm) {S
     passwordParameters.lowercase = window.confirm("include lowercase characters?");
     passwordParameters.uppercase = window.confirm("include uppercase characters?");
     passwordParameters.numbers = window.confirm("include numeric characters?");
