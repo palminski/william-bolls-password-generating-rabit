@@ -29,7 +29,7 @@ function determinePasswordLength() {
     if (length < 8 || length > 128 || Number.isNaN(length)) {
       window.alert("Please input an whole number value between 8 and 128");
     }
-    if (!Number.isNaN(length)){
+    if (!Number.isNaN(length) && length>=8 && length<= 128){
       confirm = (window.confirm("Are you sure a length of " + length + " is okay?"))
     }
   }
